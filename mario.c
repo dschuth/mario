@@ -13,16 +13,20 @@ int main(void)
     { 
     printf("The height you've determined is: %i \n", height);
     }
-        
-        for (int row = 1, row >= height, row++)
+        int row;
+        int space;
+        int hash;
+        for (row = 1, row == height, row++;)
         {
-            for (int space = height - 1, space == 0, space--)
+            for (space = height - 1, space == 0, space--;)
             {
             printf(" ");
             }
-            for (int hash = row + 1, hash == 0, hash--)
+            for (hash = row + 1, hash == height + 1, hash++;)
+            {
             printf("#");
             }
             printf("\n"); 
         }
+        return 0;
 }
