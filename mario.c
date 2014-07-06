@@ -10,19 +10,17 @@ int main(void)
     height = GetInt();
     }
     while (height <= 1 || height >=23);
-    { 
-    printf("The height you've determined is: %i \n", height);
-    }
+    
         int row;
         int space;
         int hash;
-        for (row = 1, row == height, row++;)
+        for (row = 1; row <= height; row++)
         {
-            for (space = height - 1, space == 0, space--;)
+            for (space = height - 1; space >= 0; space--)
             {
             printf(" ");
             }
-            for (hash = row + 1, hash == height + 1, hash++;)
+            for (hash = row + 1; hash <= height + 1; hash++)
             {
             printf("#");
             }
